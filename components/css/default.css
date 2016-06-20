@@ -1,3 +1,21 @@
+body {
+    /*background: #303238 url("images/bg01.png");*/
+    font-family: 'Open Sans', sans-serif;
+    color: #7b818c;
+    font-weight: 400;
+}
+h1, h2, h3, h4, h5, h6 {
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+    color: #404248;
+    margin: 0 0 1em 0;
+}
+a {
+    color: #404248;
+    text-decoration: none;
+}
+
 .parallax input[type="checkbox"]:checked ~ label span::after {
     content: "\e236";
     color: inherit;
@@ -26,9 +44,9 @@
     color: #da4453;
 }
 .parallax .menu {
-    /*position: absolute;*/
-    position: fixed;
-    top: 0;
+    position: absolute;
+    /*position: fixed;*/
+    /*top: 0;*/
     left: 0;
     width: 25%;
     height: 100%;
@@ -119,5 +137,56 @@
     }
     .menu {
         width: 100% !important;
+    }
+}
+
+
+
+
+
+
+
+
+.top-informations-bg {
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #dfdfdf;
+}
+.connect-with-us {
+    text-align: right;
+    float: right;
+}
+.top-informations-bg ul {
+    margin-bottom: 0px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+.top-informations ul li {
+    position: relative;
+}
+.top-informations ul li {
+    list-style-type: none;
+    color: #565a5c;
+    display: inline-block;
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    margin-right: 16px;
+}
+.connect-with-us ul li {
+    display: inline-block;
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+    color: #565a5c;
+    /* margin-right: 5px; */
+}
+@media screen and (max-width: 767px){
+    .connect-with-us {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .top-informations {
+        display: inline-block;
     }
 }
