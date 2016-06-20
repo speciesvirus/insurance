@@ -25,7 +25,7 @@ a {
 .parallax input[type="checkbox"]:checked ~ .menu {
     left: -25%;
 }
-.parallax input[type="checkbox"]:checked ~ .content .container {
+.parallax input[type="checkbox"]:checked ~ .content .content-container {
     margin-left: 0;
 }
 .parallax label {
@@ -103,21 +103,21 @@ a {
 .profile-insurance{
     padding: 5px 20px;
 }
-.parallax .content .container {
+.parallax .content .content-container {
     width: initial;
     margin-left: 25%;
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
 }
-.parallax .content .container h1 {
+.parallax .content .content-container h1 {
     font-weight: normal;
     margin-bottom: 30px;
 }
-.parallax .content .container h4 {
+.parallax .content .content-container h4 {
     font-weight: normal;
     margin: 15px 0;
 }
-.parallax .content .container p {
+.parallax .content .content-container p {
     font-weight: lighter;
     text-align: justify;
 }
