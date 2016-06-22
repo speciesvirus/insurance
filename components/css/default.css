@@ -150,12 +150,16 @@ a {
 
 }
 
-
+.content-container > div{
+    max-width: 999px;
+}
 
 img{
     max-width: 100%;
 }
-
+.e-line > img{
+    max-width: 13px;
+}
 
 
 
@@ -348,6 +352,7 @@ header a,header i{
     width: 100%;
     max-width: 888px;
     margin: auto;
+    margin-top: 5em;
     padding: 5%;
     background: rgba(0,0,0,0.6);
     background-size: cover;
@@ -500,4 +505,330 @@ header a,header i{
     position: relative;
     text-decoration: none;
     color: rgba(255, 255, 255, 0.2);
+}
+
+
+
+
+/* footer */
+
+#footer-section {
+
+    background-color: rgb(211, 17, 69);
+    margin-top: 5em;
+
+    padding:40px 0px 40px 0px;
+}
+
+#footer-copy {
+    padding-left: 15px;
+    padding-right: 15px;
+
+
+
+
+}
+.content-safe {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 950px;
+}
+@media screen and (max-width: 999px) and (min-width: 600px){
+    .content-safe {
+        margin: 0 auto;
+        width: 560px;
+    }
+}
+
+
+#footer-section h3 {
+    color:#ffffff;
+    font-size:16px;
+    font-weight:400;
+    padding:0;
+    margin:0px 0px 15px 0px;
+}
+
+#footer-section a {
+    color:#ffffff;
+    font-size:14px;
+    line-height:22px;
+    font-weight:300;
+    text-decoration:none;
+    display:block;
+}
+
+#footer-section a:hover {
+    text-decoration:underline;
+}
+
+.footer-group {
+    float:left;
+    margin:0px 50px 0px 0px;
+}
+
+#footer-logo {
+    background-image:url(http://www.braksoftware.com/codepen/bruce/v1/bruce-logo-footer-large.png);
+    background-size:100% 100%;
+    background-repeat:no-repeat;
+    width:199px;
+    height:46px;
+    margin:0px 60px 50px 0px;
+}
+
+#footer-join-our-team {
+    cursor:pointer;
+    background-image:url(http://www.braksoftware.com/codepen/bruce/v1/join-our-team-button-large.png);
+    background-size:100% 100%;
+    background-repeat:no-repeat;
+    width:184px;
+    height:41px;
+    margin:0px 0px 10px 0px;
+}
+
+#footer-join-our-team:hover {
+    background-image:url(http://www.braksoftware.com/codepen/bruce/v1/join-our-team-button-over-large.png);
+}
+
+.footer-social-media-link {
+    display:inline-block;
+    cursor:pointer;
+    background-position:center;
+    background-repeat:no-repeat;
+    width:27px;
+    height:26px;
+    margin:4px;
+}
+
+#footer-facebook {
+    background-image:url(http://www.braksoftware.com/codepen/bruce/v1/facebook-white-large.png);
+}
+
+#footer-twitter {
+    background-image:url(http://www.braksoftware.com/codepen/bruce/v1/twitter-white-large.png);
+}
+
+#footer-blogspot {
+    background-image:url(http://www.braksoftware.com/codepen/bruce/v1/blogger-white-large.png);
+}
+
+#footer-contact {
+    color:white;
+    font-size:12px;
+    font-weight:300;
+    padding:30px 0px 10px 0px;
+}
+
+#footer-contact div {
+    display:inline;
+}
+
+#footer-contact a {
+    display:inline;
+    color:inherit;
+    font-size:inherit;
+    line-height:inherit;
+}
+
+#footer-copyright {
+    color:#eeeeee;
+    font-size:11px;
+    font-weight:300;
+}
+
+.footer-divider {
+    margin:0px 4px 0px 4px;
+}
+
+@media screen and (min-width:600px) and (max-width: 999px) {
+    #footer-section h3 {
+        font-size:16px;
+        font-weight:400;
+        margin:0px 0px 15px 0px;
+    }
+
+    #footer-section a {
+        font-size:13px;
+        font-weight:300;
+        line-height:22px;
+    }
+
+    .footer-group {
+        margin:0px 20px 0px 0px;
+    }
+
+    #footer-logo {
+        background-image:url(http://www.braksoftware.com/codepen/bruce/v1/bruce-logo-footer-medium.png);
+        width:121px;
+        height:28px;
+        margin:4px 0px 37px 0px;
+    }
+
+    #footer-join-our-team {
+        background-image:url(http://www.braksoftware.com/codepen/bruce/v1/join-our-team-button-medium.png);
+        width:120px;
+        height:27px;
+        margin:0px 0px 10px 0px;
+    }
+
+    #footer-join-our-team:hover {
+        background-image:url(http://www.braksoftware.com/codepen/bruce/v1/join-our-team-button-over-medium.png);
+    }
+
+    .footer-social-media-link {
+        width:16px;
+        height:16px;
+        margin:4px;
+    }
+
+    #footer-facebook {
+        background-image:url(http://www.braksoftware.com/codepen/bruce/v1/facebook-white-medium.png);
+    }
+
+    #footer-twitter {
+        background-image:url(http://www.braksoftware.com/codepen/bruce/v1/twitter-white-medium.png);
+    }
+
+    #footer-blogspot {
+        background-image:url(http://www.braksoftware.com/codepen/bruce/v1/blogger-white-medium.png);
+    }
+
+    #footer-contact {
+        font-size:13px;
+        font-weight:300;
+    }
+
+    #footer-contact div {
+        /* So that the address and phone numbers are on separate lines */
+        display:block;
+    }
+
+
+    #footer-contact a {
+        display:inline;
+        color:inherit;
+        font-size:inherit;
+        line-height:inherit;
+    }
+
+    #footer-contact div:nth-last-child(2) {
+        /* So that there is no divider between the address and phone number lines */
+        display:none;
+    }
+}
+
+@media screen and (max-width: 599px) {
+    #footer-section {
+        padding:25px 0px 25px 0px;
+    }
+
+    #footer-section h3 {
+        font-size:20px;
+        font-weight:400;
+        margin:4px 0px 10px 0px;
+    }
+
+    #footer-section a {
+        font-size:17px;
+        font-weight:300;
+        line-height:28px;
+    }
+
+    .footer-group {
+        width:300px;
+        margin:0px 20px 20px 0px;
+    }
+
+    .footer-group > * {
+        vertical-align:top;
+    }
+
+    .footer-group-logo {
+        margin:0px 0px 20px 0px
+    }
+
+
+    #footer-logo {
+        background-image:url(http://www.braksoftware.com/codepen/bruce/v1/bruce-logo-footer-medium.png);
+        width:120px;
+        height:27px;
+        margin:0px 10px 20px 0px;
+    }
+
+    #footer-join-our-team {
+        display:inline-block;
+        margin:0px 10px 10px 0px;
+    }
+
+    .footer-social-media-link {
+        margin:8px 4px 0px 0px;
+    }
+
+    #footer-contact {
+        font-size:14px;
+        line-height:24px;
+        padding:10px 0px 10px 0px;
+    }
+
+    #footer-contact span.nw {
+        display:block;
+    }
+
+    .footer-contact-company-name {
+        font-weight:400;
+    }
+
+    .footer-divider {
+        display:none;
+    }
+
+    #footer-contact a {
+        display:inline;
+        color:inherit;
+        font-size:inherit;
+        line-height:inherit;
+    }
+}
+
+/* Retina graphics here */
+@media screen and (-webkit-min-device-pixel-ratio: 2) and (min-width:1000px) {
+    #footer-logo {
+        background-image:url(http://www.braksoftware.com/codepen/bruce/v1/bruce-logo-footer-large@2x.png);
+    }
+
+    #footer-join-our-team {
+        background-image:url(http://www.braksoftware.com/codepen/bruce/v1/join-our-team-button-large@2x.png);
+    }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2) and (min-width:600px) and (max-width: 999px) {
+    #footer-logo {
+        background-image:url(http://www.braksoftware.com/codepen/bruce/v1/bruce-logo-footer-medium@2x.png);
+    }
+
+    #footer-join-our-team {
+        background-image:url(http://www.braksoftware.com/codepen/bruce/v1/join-our-team-button-medium@2x.png);
+    }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 599px) {
+    #footer-logo {
+        background-image:url(http://www.braksoftware.com/codepen/bruce/v1/bruce-logo-footer-medium@2x.png);
+    }
+
+    #footer-join-our-team {
+        background-image:url(http://www.braksoftware.com/codepen/bruce/v1/join-our-team-button-large@2x.png);
+    }
+}
+
+/* end footer*/
+
+
+
+
+
+.social-container{
+    text-align: right;
+    margin: 1em 0;
+    padding: 2em;
 }
