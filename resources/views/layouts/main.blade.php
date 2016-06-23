@@ -2,7 +2,13 @@
 <html>
 <head>
 
+    <meta charset="UTF-8">
+    <meta name="description" content="แผนประกันที่ให้ความคุ้มครองครบถ้วนในแผนเดียว ทั้งประกันชีวิต ประกันสุขภาพ ประกันอุบัติเหตุ และประกันโรคร้ายแรง ให้คุณพร้อมรับกับทุกสถานการณ์ที่พลิกผัน เพื่อความอุ่นใจในอนาคตของคุณและครอบครัว">
+    <meta name="keywords" content="AIA,ALL IN ONE,ความรัก,insurance,future,finance">
+    <meta name="author" content="aiachicker">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>@yield('title')</title>
+
     <link rel="stylesheet" type="text/css" href="{{ asset("components/css/reset.css") }}">
     <link rel="stylesheet" type="text/css" href="{{ asset("components/font-awesome/css/font-awesome.min.css") }}">
     <link rel="stylesheet" type="text/css" href="{{ asset("components/bootstrap/dist/css/bootstrap.min.css") }}">
