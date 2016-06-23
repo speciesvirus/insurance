@@ -152,13 +152,14 @@ a {
 
 .content-container > div{
     max-width: 999px;
+    margin: 0 auto;
 }
 
 img{
     max-width: 100%;
 }
 .e-line > img{
-    max-width: 13px;
+    max-width: 17px;
 }
 
 
@@ -568,11 +569,12 @@ header a,header i{
 }
 
 #footer-logo {
-    background-image:url(http://www.braksoftware.com/codepen/bruce/v1/bruce-logo-footer-large.png);
+    /*background-image:url(http://www.braksoftware.com/codepen/bruce/v1/bruce-logo-footer-large.png);*/
+    background-image:url(../image/aia-logo-lockup-2x.png);
     background-size:100% 100%;
     background-repeat:no-repeat;
-    width:199px;
-    height:46px;
+    width: 210px;
+    height: 88px;
     margin:0px 60px 50px 0px;
 }
 
@@ -658,9 +660,10 @@ header a,header i{
     }
 
     #footer-logo {
-        background-image:url(http://www.braksoftware.com/codepen/bruce/v1/bruce-logo-footer-medium.png);
+        /*background-image:url(http://www.braksoftware.com/codepen/bruce/v1/bruce-logo-footer-medium.png);*/
+        background-image:url(../image/aia-logo-lockup-2x.png);
         width:121px;
-        height:28px;
+        height:50px;
         margin:4px 0px 37px 0px;
     }
 
@@ -749,9 +752,10 @@ header a,header i{
 
 
     #footer-logo {
-        background-image:url(http://www.braksoftware.com/codepen/bruce/v1/bruce-logo-footer-medium.png);
+        /*background-image:url(http://www.braksoftware.com/codepen/bruce/v1/bruce-logo-footer-medium.png);*/
+        background-image:url(../image/aia-logo-lockup-2x.png);
         width:120px;
-        height:27px;
+        height:50px;
         margin:0px 10px 20px 0px;
     }
 

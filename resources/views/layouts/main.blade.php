@@ -46,7 +46,7 @@
                                 </a>
                             </li>
                             <li class="e-line">
-                                <img src="{{ asset("components/image/line-icon.svg") }}">
+                                <img src="{{ asset("components/image/line-icon-white.png") }}">
                                 <a href="skype:chittapuu?call">
                                     @aiachicker
                                 </a>
@@ -102,7 +102,7 @@
             <span class="glyphicon"></span>
         </label>
         <div class="menu">
-            <h2>AIA sure</h2>
+            <h2>AIA Chicker</h2>
             <ul>
                 {{--<li>--}}
                 {{--<div class="profile-insurance">--}}
@@ -110,46 +110,47 @@
                 {{--</div>--}}
                 {{--</li>--}}
                 {{--<li><a href="javascript:void(0)" class="active">คุ้มครองตลอดชีพ</a></li>--}}
-                <li><a href="javascript:void(0)">คุ้มครองโรคร้ายแรง</a></li>
-                <li><a href="javascript:void(0)">ประกันสุขภาพรายปี AIA Health Guard</a></li>
-                <li><a href="javascript:void(0)">ค่าชดเชยรายวัน</a></li>
-                <li><a href="javascript:void(0)">ประกันอุบัติเหตุ</a></li>
+                <li><a href="{{ URL::to('/ecir') }}">คุ้มครองโรคร้ายแรง</a></li>
+                {{--<li><a href="javascript:void(0)">ประกันสุขภาพรายปี AIA Health Guard</a></li>--}}
+                <li><a href="{{ URL::to('/hb') }}">ค่าชดเชยรายวัน</a></li>
+                <li><a href="{{ URL::to('/pa') }}">ประกันอุบัติเหตุ</a></li>
 
                 <li><a href="javascript:void(0)" class="active">สะสมทรัพย์</a>
                     <ul>
-                        <li><a href="javascript:void(0)">ชำระเบี้ย 7 ปี คุ้มครอง 15 ปี (มีเงินปันผล)</a></li>
-                        <li><a href="javascript:void(0)">ชำระเบี้ย 8 ปี คุ้มครอง 20 ปี (มีเงินปันผล)</a></li>
-                        <li><a href="javascript:void(0)">ชำระเบี้ย 15 ปี คุ้มครอง 25 ปี (มีเงินปันผล)</a></li>
-                        <li><a href="javascript:void(0)">ชำระเบี้ย 15 ปี คุ้มครอง 30 ปี (มีเงินปันผล)</a></li>
-                        <li><a href="javascript:void(0)">ชำระเบี้ย 20 ปี คุ้มครอง 20 ปี (มีเงินปันผล)</a></li>
-                        <li><a href="javascript:void(0)">ชำระเบี้ย 10 ปี คุ้มครองถึงอายุ 80 ปี (มีเงินปันผล)</a></li>
-                        <li><a href="javascript:void(0)">ชำระเบี้ย 15 ปี คุ้มครองถึงอายุ 80 ปี (มีเงินปันผล)</a></li>
+                        {{--<li><a href="{{ URL::to('/pa') }}">ชำระเบี้ย 7 ปี คุ้มครอง 15 ปี (มีเงินปันผล)</a></li>--}}
+                        <li><a href="{{ URL::to('/5Pay10') }}">ชำระเบี้ย 5 ปี คุ้มครอง 10 ปี (ไม่มีเงินปันผล)</a></li>
+                        <li><a href="{{ URL::to('/8Pay20') }}">ชำระเบี้ย 8 ปี คุ้มครอง 20 ปี (มีเงินปันผล)</a></li>
+                        <li><a href="{{ URL::to('/15Pay25') }}">ชำระเบี้ย 15 ปี คุ้มครอง 25 ปี (มีเงินปันผล)</a></li>
+                        <li><a href="{{ URL::to('/15Pay30') }}">ชำระเบี้ย 15 ปี คุ้มครอง 30 ปี (มีเงินปันผล)</a></li>
+                        <li><a href="{{ URL::to('/excellent') }}">ชำระเบี้ย 20 ปี คุ้มครอง 20 ปี (มีเงินปันผล)</a></li>
+                        <li><a href="{{ URL::to('/10For80') }}">ชำระเบี้ย 10 ปี คุ้มครองถึงอายุ 80 ปี (มีเงินปันผล)</a></li>
+                        {{--<li><a href="{{ URL::to('/pa') }}">ชำระเบี้ย 15 ปี คุ้มครองถึงอายุ 80 ปี (มีเงินปันผล)</a></li>--}}
                     </ul>
                 </li>
 
                 <li><a href="javascript:void(0)" class="active">คุ้มครองตลอดชีพ</a>
                     <ul>
-                        <li><a href="javascript:void(0)">ชำระเบี้ย 20 ปี คุ้มครองถึงอายุ 99 ปี (ไม่มีเงินปันผล)</a></li>
-                        <li><a href="javascript:void(0)">ชำระเบี้ย 15 ปี คุ้มครองถึงอายุ 99 ปี (มีเงินปันผล)</a></li>
-                        <li><a href="javascript:void(0)">ชำระเบี้ย 5 ปี คุ้มครองถึง 99 ปี (มีเงินปันผล)</a></li>
+                        <li><a href="{{ URL::to('/15PayLife') }}">ชำระเบี้ย 15 ปี คุ้มครองถึงอายุ 99 ปี (มีเงินปันผล)</a></li>
+                        <li><a href="{{ URL::to('/20PayLife') }}">ชำระเบี้ย 20 ปี คุ้มครองถึงอายุ 99 ปี (ไม่มีเงินปันผล)</a></li>
+                        <li><a href="{{ URL::to('/LifeGift') }}">ชำระเบี้ย 5 ปี คุ้มครองถึง 99 ปี (มีเงินปันผล)</a></li>
                     </ul>
                 </li>
                 <li><a href="javascript:void(0)" class="active">ค่ารักษาโรงพยาบาลและศัลยกรรม</a>
                     <ul>
-                        <li><a href="javascript:void(0)">ประกันสุขภาพแบบแยกค่าใช้จ่าย H&S</a></li>
-                        <li><a href="javascript:void(0)">ประกันสุขภาพเหมาจ่าย AIA H&S Plus Gold</a></li>
-                        <li><a href="javascript:void(0)">ประกันสุขภาพ H&S UDR</a></li>
+                        <li><a href="{{ URL::to('/H&S') }}">ประกันสุขภาพแบบแยกค่าใช้จ่าย H&S</a></li>
+                        <li><a href="{{ URL::to('/H&S_PlusGold') }}">ประกันสุขภาพเหมาจ่าย AIA H&S Plus Gold</a></li>
+                        <li><a href="{{ URL::to('/H&S_Junior') }}">ประกันสุขภาพเด็ก H&S Junior</a></li>
                     </ul>
                 </li>
 
 
                 <li><a href="javascript:void(0)" class="active">ประกันกลุ่ม</a>
                     <ul>
-                        <li><a href="javascript:void(0)">ประกันอุบัติเหตุกลุ่มพนักงาน GPA Continental</a></li>
-                        <li><a href="javascript:void(0)">ประกันสุขภาพกลุ่มพนักงาน 5 UP</a></li>
-                        <li><a href="javascript:void(0)">ประกันสุขภาพกลุ่มพนักงาน 20 UP</a></li>
-                        <li><a href="javascript:void(0)">ประกันสุขภาพกลุ่มพนักงาน 20 UP</a></li>
-                        <li><a href="javascript:void(0)">ประกันสุขภาพกลุ่มพนักงาน 50 UP</a></li>
+                        <li><a href="{{ URL::to('/pa') }}">ประกันอุบัติเหตุกลุ่มพนักงาน GPA Continental</a></li>
+                        <li><a href="{{ URL::to('/pa') }}">ประกันสุขภาพกลุ่มพนักงาน 5 UP</a></li>
+                        <li><a href="{{ URL::to('/pa') }}">ประกันสุขภาพกลุ่มพนักงาน 20 UP</a></li>
+                        <li><a href="{{ URL::to('/pa') }}">ประกันสุขภาพกลุ่มพนักงาน 20 UP</a></li>
+                        <li><a href="{{ URL::to('/pa') }}">ประกันสุขภาพกลุ่มพนักงาน 50 UP</a></li>
                     </ul>
                 </li>
 
@@ -175,7 +176,49 @@
             <div class="content-container">
                 <div class="">
 
+                    <div class="social-container">
+                        <div class="fb-like clearfix" data-href="<?php echo "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]"; ?>" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+                    </div>
+
+
                     @yield('content')
+
+                    <div class="contact-container clearfix">
+
+                        <form>
+
+                            <h3>ลงทะเบียนรับคำปรึกษา</h3>
+
+                            <div class="col-md-6">
+                                <input type="text" class="text" name="username" placeholder="ชื่อ-นามสกุล">
+                                <input type="text" class="text" name="username" placeholder="email">
+                                <input type="text" class="text" name="username" placeholder="เบอร์โทร">
+
+
+                                <div class="col-md-6">
+                                    <input type="radio" id="checkbox-1-1" class="custom-checkbox"  name="selector" checked/>
+                                    <label for="checkbox-1-1">ชาย</label>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="radio" id="checkbox-1-2" class="custom-checkbox"  name="selector" />
+                                    <label for="checkbox-1-2">หญิง</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" class="text" name="username" placeholder="อายุ">
+                                <input type="text" class="text" name="username" placeholder="เบี้ยต่อปี">
+
+
+
+                                <textarea name="message" type="text" class="text" id="input-message" placeholder="ข้อความ"></textarea>
+                            </div>
+                            <br>
+                            <button class="signin clearfix">
+                                ส่งข้อความ
+                            </button>
+                        </form>
+
+                    </div>
 
                 </div>
             </div><!--/.container-->
@@ -196,26 +239,28 @@
                 {{--<div id="footer-blogspot" class="footer-social-media-link" onclick="window.open('http://richlandpascokennewickhvac.blogspot.com', '_blank');"></div>--}}
             </div>
             <div class="footer-group">
-                <h3>Residential</h3>
-                <a href="http://s.codepen.io/brianrak/debug/wBopQJ">Overview</a>
-                <a href="http://s.codepen.io/brianrak/debug/wBopQJ#maintenance">Maintenance Services</a>
-                <a href="http://s.codepen.io/brianrak/debug/wBopQJ#installation">Installation Services</a>
-                <a href="http://s.codepen.io/brianrak/debug/yNJyLm">Success Stories</a>
+                <h3>สะสมทรัพย์</h3>
+                <a href="javascript:void(0)">7 Pay 15</a>
+                <a href="javascript:void(0)">8 PaY 20</a>
+                <a href="javascript:void(0)">15 Pay 25</a>
+                <a href="javascript:void(0)">15 Pay 30</a>
+                <a href="javascript:void(0)">AIA Excellent</a>
+                <a href="javascript:void(0)">10 For 80</a>
+                <a href="javascript:void(0)">AIA Smart Saver</a>
+
+
             </div>
             <div class="footer-group">
-                <h3>Commercial</h3>
-                <a href="http://s.codepen.io/brianrak/debug/GgWYgR">Overview</a>
-                <a href="http://s.codepen.io/brianrak/debug/GgWYgR#maintenance">Maintenance Services</a>
-                <a href="http://s.codepen.io/brianrak/debug/GgWYgR#construction">Construction Services</a>
-                <a href="http://s.codepen.io/brianrak/debug/gbmBLa">Projects</a>
-                <a href="http://s.codepen.io/brianrak/debug/bNWbZo">Success Stories</a>
+                <h3>คุ้มครองตลอดชีพ</h3>
+                <a href="http://s.codepen.io/brianrak/debug/GgWYgR">20 Pay Life</a>
+                <a href="http://s.codepen.io/brianrak/debug/GgWYgR#maintenance">15 Pay Life</a>
+                <a href="http://s.codepen.io/brianrak/debug/GgWYgR#construction">AIA Life Gift</a>
             </div>
             <div class="footer-group">
-                <h3>Company Info</h3>
-                <a href="http://s.codepen.io/brianrak/debug/vOKENp">Overview</a>
-                <a href="http://s.codepen.io/brianrak/debug/vOKENp#about">About Us</a>
-                <a href="http://s.codepen.io/brianrak/debug/vOKENp#contact">Contact Us</a>
-                <a href="http://s.codepen.io/brianrak/debug/vOKENp#team">Our Team</a>
+                <h3>ค่ารักษาพยาบาล</h3>
+                <a href="http://s.codepen.io/brianrak/debug/vOKENp#about">H&S</a>
+                <a href="http://s.codepen.io/brianrak/debug/vOKENp#about">H&S Plus Gold</a>
+                <a href="http://s.codepen.io/brianrak/debug/vOKENp">H&S Junior</a>
             </div>
             <div class="clearfix"></div>
 
@@ -251,6 +296,16 @@
 </div>
 </body>
 </html>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/th_TH/sdk.js#xfbml=1&version=v2.6&appId=1724713611112155";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
 
 <script type="text/javascript">
     $(function(){
