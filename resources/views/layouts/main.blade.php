@@ -108,7 +108,7 @@
             <span class="glyphicon"></span>
         </label>
         <div class="menu">
-            <h2>AIA Chicker</h2>
+            <h2><a href="{{ URL::to('/') }}" class="chicker_logo">AIA Chicker</a></h2>
             <ul>
                 {{--<li>--}}
                 {{--<div class="profile-insurance">--}}
@@ -186,6 +186,7 @@
                 {{--<li><a href="javascript:void(0)">Reviews</a></li>--}}
                 {{--<li><a href="javascript:void(0)">Messages</a></li>--}}
             </ul>
+            <div class="clearfix"></div>
         </div><!--/.menu-->
 
 
@@ -383,14 +384,25 @@
             $("input[type='checkbox'][id='menu-toggle']").prop('checked', false);
         }
 
-        $( window ).resize(function() {
-            $width = $( window ).width();
-            if($width < 767){
-                $("input[type='checkbox'][id='menu-toggle']").prop('checked', true);
-            }else{
-                $("input[type='checkbox'][id='menu-toggle']").prop('checked', false);
+        $('#menu-toggle').change(function () {
+            if($(this).prop('checked'))
+            {
+                $('body').removeClass('active');
+            }
+            else
+            {
+                $('body').addClass('active');
             }
         });
+
+//        $( window ).resize(function() {
+//            $width = $( window ).width();
+//            if($width < 767){
+//                $("input[type='checkbox'][id='menu-toggle']").prop('checked', true);
+//            }else{
+//                $("input[type='checkbox'][id='menu-toggle']").prop('checked', false);
+//            }
+//        });
 
     });
 </script>

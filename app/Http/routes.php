@@ -114,3 +114,6 @@ Route::get('/HealthyLiving', function () {
 Route::get('/20PayLifePackage', function () {
     return view('package/20PayLifePackage');
 });
+
+
+Route::resource('/api/contact', 'ContactController');

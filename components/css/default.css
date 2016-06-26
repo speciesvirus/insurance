@@ -16,6 +16,16 @@ a {
     text-decoration: none;
 }
 
+
+.chicker_logo{
+    -webkit-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+}
+.chicker_logo:hover{
+    font-size: 35px;
+    text-decoration: none;
+}
+
 .parallax input[type="checkbox"]:checked ~ label span::after {
     content: "\e236";
     color: inherit;
@@ -133,6 +143,9 @@ a {
     .parallax input[type="checkbox"]:checked ~ .menu {
         left: -100% !important;
     }
+    .parallax input[type="checkbox"]:checked ~ body {
+        overflow: hidden;
+    }
     .parallax input[type="checkbox"]:checked ~ label span {
         color: inherit;
         -webkit-transition: all 0.5s ease-in-out;
@@ -146,6 +159,19 @@ a {
     .menu {
 
         width: 100% !important;
+        background: #fff;
+        overflow-y: scroll;
+    }
+
+    body.active{
+        overflow: hidden;
+    }
+}
+
+@media (max-width: 520px) {
+
+    .parallax label {
+        top: 5.1em;
     }
 
 }
@@ -170,7 +196,7 @@ header {
 
     background-color: #d31145;
     border-bottom: 1px solid #b8123e;
-    margin-bottom: 3em;
+    margin-bottom: 3.4em;
 
 }
 header a,header i{
