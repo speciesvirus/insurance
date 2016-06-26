@@ -10,7 +10,8 @@
     <title>@yield('title')</title>
 
     <meta property="fb:app_id" content="1724713611112155" />
-    @yield('facebook-meta')
+    <meta property="og:url"    content="<?php echo "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]"; ?>" />
+@yield('facebook-meta')
 
     <link rel="stylesheet" type="text/css" href="{{ asset("components/css/reset.css") }}">
     <link rel="stylesheet" type="text/css" href="{{ asset("components/font-awesome/css/font-awesome.min.css") }}">

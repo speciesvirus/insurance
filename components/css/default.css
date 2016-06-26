@@ -281,11 +281,12 @@ header a,header i{
     font-weight: normal !important;
     text-align: center;
     font-size: 2em;
-    text-shadow: 0 0 30px #EC637B,
-    0 0 10px rgba(230, 161, 173, 0.41),
-    0 0 100px #E6A1AD,
-    0 0 500px #F36780,
-    5px 9px 5px rgba(0, 0, 0, 0.5);
+    color: #000;
+    /*text-shadow: 0 0 30px #EC637B,*/
+    /*0 0 10px rgba(230, 161, 173, 0.41),*/
+    /*0 0 100px #E6A1AD,*/
+    /*0 0 500px #F36780,*/
+    /*5px 9px 5px rgba(0, 0, 0, 0.5);*/
 }
 
 @keyframes pulse{
@@ -752,13 +753,13 @@ header a,header i{
     }
 
     #footer-section h3 {
-        font-size:20px;
+        font-size:17px;
         font-weight:400;
         margin:4px 0px 10px 0px;
     }
 
     #footer-section a {
-        font-size:17px;
+        font-size:13px;
         font-weight:300;
         line-height:28px;
     }

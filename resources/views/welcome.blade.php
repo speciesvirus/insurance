@@ -1,8 +1,14 @@
 
 @extends('layouts.main')
 
-@section('title', 'Insurance')
+@section('title', 'All In One')
 
+@section('facebook-meta')
+    <meta property="og:type"          content="website" />
+    <meta property="og:title"         content="AIA ALL IN ONE" />
+    <meta property="og:description"   content="แผนประกันที่ให้ความคุ้มครองครบถ้วนในแผนเดียว ทั้งประกันชีวิต ประกันสุขภาพ ประกันอุบัติเหตุ และประกันโรคร้ายแรง ให้คุณพร้อมรับกับทุกสถานการณ์ที่พลิกผัน เพื่อความอุ่นใจในอนาคตของคุณและครอบครัว" />
+    <meta property="og:image"         content="{{ asset("components/image/ECIR/ecir_logo.jpg") }}" />
+@stop
 
 @section('content')
 
