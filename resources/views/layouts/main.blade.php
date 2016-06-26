@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>@yield('title')</title>
 
+    <meta property="fb:app_id" content="1724713611112155" />
     @yield('facebook-meta')
 
     <link rel="stylesheet" type="text/css" href="{{ asset("components/css/reset.css") }}">
