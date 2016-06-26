@@ -836,3 +836,29 @@ header a,header i{
     margin: 1em 0;
     padding: 2em;
 }
+.fb-like{
+    float: right;
+}
+
+#breadcrumb {
+    /*margin-bottom: 20px;*/
+    margin-bottom: 3em;
+    color: #777;
+    font-size: 13px;
+
+    border: 1px solid #ddd;
+    background-color: #F7F7F7;
+    border-radius: 3px;
+    padding: 1rem;
+    width: 100%;
+}
+div#breadcrumb div {
+    display: inline;
+}
+#breadcrumb a {
+    text-decoration: none;
+    color: #777;
+}
+#breadcrumb span.sp {
+    margin: 0 10px;
+}

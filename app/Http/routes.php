@@ -75,3 +75,42 @@ Route::get('/H&S_Junior', function () {
     return view('H&S_Junior');
 });
 
+
+
+
+Route::get('/GPA-Continental', function () {
+    return view('group/GPA-Continental');
+});
+Route::get('/5up', function () {
+    return view('group/5up');
+});
+Route::get('/20up', function () {
+    return view('group/20up');
+});
+Route::get('/50up', function () {
+    return view('group/50up');
+});
+
+
+
+Route::get('/Family', function () {
+    return view('package/FamilyShield');
+});
+Route::get('/Lady', function () {
+    return view('package/LadyShield');
+});
+Route::get('/HealthLifetimeJunior', function () {
+    return view('package/HealthLifetimeJunior');
+});
+Route::get('/HealthLifetimeAdult', function () {
+    return view('package/HealthLifetimeAdult');
+});
+Route::get('/HealthGuard', function () {
+    return view('package/HealthGuard');
+});
+Route::get('/HealthyLiving', function () {
+    return view('package/HealthyLiving');
+});
+Route::get('/20PayLifePackage', function () {
+    return view('package/20PayLifePackage');
+});

@@ -152,11 +152,22 @@
 
                 <li><a href="javascript:void(0)" class="active">ประกันกลุ่ม</a>
                     <ul>
-                        <li><a href="{{ URL::to('/pa') }}">ประกันอุบัติเหตุกลุ่มพนักงาน GPA Continental</a></li>
-                        <li><a href="{{ URL::to('/pa') }}">ประกันสุขภาพกลุ่มพนักงาน 5 UP</a></li>
-                        <li><a href="{{ URL::to('/pa') }}">ประกันสุขภาพกลุ่มพนักงาน 20 UP</a></li>
-                        <li><a href="{{ URL::to('/pa') }}">ประกันสุขภาพกลุ่มพนักงาน 20 UP</a></li>
-                        <li><a href="{{ URL::to('/pa') }}">ประกันสุขภาพกลุ่มพนักงาน 50 UP</a></li>
+                        <li><a href="{{ URL::to('/GPA-Continental') }}">ประกันอุบัติเหตุกลุ่มพนักงาน GPA Continental</a></li>
+                        <li><a href="{{ URL::to('/5up') }}">ประกันสุขภาพกลุ่มพนักงาน 5 UP</a></li>
+                        <li><a href="{{ URL::to('/20up') }}">ประกันสุขภาพกลุ่มพนักงาน 20 UP</a></li>
+                        <li><a href="{{ URL::to('/50up') }}">ประกันสุขภาพกลุ่มพนักงาน 50 UP</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="javascript:void(0)" class="active">สำเร็จรูป</a>
+                    <ul>
+                        <li><a href="{{ URL::to('/Family') }}">Family Shield</a></li>
+                        <li><a href="{{ URL::to('/Lady') }}">Lady Shield</a></li>
+                        <li><a href="{{ URL::to('/HealthLifetimeJunior') }}">Health Lifetime Junior</a></li>
+                        <li><a href="{{ URL::to('/HealthLifetimeAdult') }}">Health Lifetime Adult</a></li>
+                        <li><a href="{{ URL::to('/HealthGuard') }}">Health Guard</a></li>
+                        <li><a href="{{ URL::to('/HealthyLiving') }}"> Healthy Living</a></li>
+                        <li><a href="{{ URL::to('/20PayLifePackage') }}">20 Pay Life (Par)</a></li>
                     </ul>
                 </li>
 
@@ -182,9 +193,44 @@
             <div class="content-container">
                 <div class="">
 
-                    <div class="social-container">
+                    <div id="breadcrumb" class="breadcrumb-category">
+                        <div itemtype="http://data-vocabulary.org/Breadcrumb" itemscope="" class="breadcrumb-home">
+
+                            <a href="{{ URL::to('/') }}" itemprop="url">
+                                <span class="fa fa-home fa-fw"></span>
+                                <span itemprop="title">AIA Chicker</span>
+                            </a>
+
+                        </div>
+
+                        <?php $path_segment = 5; ?>
+                        @for( $i = 1; $i < $path_segment; $i ++ )
+                        @if(!empty(Request::segment($i)))
+
+                            <span class="sp">
+                                <span class="fa fa-angle-right"></span>
+                            </span>
+
+                            <div itemtype="http://data-vocabulary.org/Breadcrumb" itemscope="">
+                                {{--<span class="fa fa-folder fa-fw"></span>--}}
+                                <a href="{{ URL::to('/').'/'.Request::segment($i) }}" itemprop="url">
+                                    <span itemprop="title">{{ Request::segment($i) }}</span>
+                                </a>
+                            </div>
+
+                        @endif
+                        @endfor
+
+
+
+
                         <div class="fb-like clearfix" data-href="<?php echo "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]"; ?>" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+
                     </div>
+
+
+
+
 
 
                     @yield('content')
@@ -234,6 +280,10 @@
     </div><!--/.parallax-->
 
 
+
+
+
+
     <div id="footer-section">
         <div id="footer-copy" class="content-safe container">
 
@@ -245,29 +295,40 @@
                 {{--<div id="footer-blogspot" class="footer-social-media-link" onclick="window.open('http://richlandpascokennewickhvac.blogspot.com', '_blank');"></div>--}}
             </div>
             <div class="footer-group">
-                <h3>สะสมทรัพย์</h3>
-                <a href="javascript:void(0)">7 Pay 15</a>
-                <a href="javascript:void(0)">8 PaY 20</a>
-                <a href="javascript:void(0)">15 Pay 25</a>
-                <a href="javascript:void(0)">15 Pay 30</a>
-                <a href="javascript:void(0)">AIA Excellent</a>
-                <a href="javascript:void(0)">10 For 80</a>
-                <a href="javascript:void(0)">AIA Smart Saver</a>
+                <h3>ประกันชีวิต</h3>
+
+
+                <a href="{{ URL::to('/15PayLife') }}">5 Pay Lift</a>
+                <a href="{{ URL::to('/20PayLife') }}">15 Pay Lift</a>
+                <a href="{{ URL::to('/LifeGift') }}">20 Pay Lift</a>
+
+                <a href="{{ URL::to('/5Pay10') }}">5 Pay 10</a>
+                <a href="{{ URL::to('/8Pay20') }}">8 PaY 20</a>
+                <a href="{{ URL::to('/15Pay25') }}">15 Pay 25</a>
+                <a href="{{ URL::to('/15Pay30') }}">15 Pay 30</a>
+                <a href="{{ URL::to('/20Pay20') }}">AIA Excellent</a>
+                <a href="{{ URL::to('/10for80') }}">10 For 80</a>
 
 
             </div>
-            <div class="footer-group">
-                <h3>คุ้มครองตลอดชีพ</h3>
-                <a href="http://s.codepen.io/brianrak/debug/GgWYgR">20 Pay Life</a>
-                <a href="http://s.codepen.io/brianrak/debug/GgWYgR#maintenance">15 Pay Life</a>
-                <a href="http://s.codepen.io/brianrak/debug/GgWYgR#construction">AIA Life Gift</a>
-            </div>
+
+
             <div class="footer-group">
                 <h3>ค่ารักษาพยาบาล</h3>
-                <a href="http://s.codepen.io/brianrak/debug/vOKENp#about">H&S</a>
-                <a href="http://s.codepen.io/brianrak/debug/vOKENp#about">H&S Plus Gold</a>
-                <a href="http://s.codepen.io/brianrak/debug/vOKENp">H&S Junior</a>
+                <a href="{{ URL::to('/H&S') }}">H&S</a>
+                <a href="{{ URL::to('/H&S_PlusGold') }}">H&S Plus Gold</a>
+                <a href="{{ URL::to('/H&S_Junior') }}">H&S Junior</a>
             </div>
+
+
+
+            <div class="footer-group">
+                <h3>เพิ่มเติม</h3>
+                <a href="{{ URL::to('/ecir') }}">คุ้มครองโรคร้ายแรง</a>
+                <a href="{{ URL::to('/hb') }}">ค่าชดเชยรายวัน</a>
+                <a href="{{ URL::to('/pa') }}">ประกันอุบัติเหตุ</a>
+            </div>
+
             <div class="clearfix"></div>
 
             <div id="footer-contact">
