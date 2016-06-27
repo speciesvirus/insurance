@@ -2,7 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+ use Illuminate\Http\Request;
+ use DB;
 
 use App\Http\Requests;
 
@@ -82,5 +83,27 @@ class ContactController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+
+    /**
+     * Insert contact.
+     *
+     * @param  Request  $request
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public  function insertContact(Request $request){
+
+        DB::table('contact')->insert(
+            [
+                'name' => $request->input('name'), 'sex' => $request->input('sex'),
+                'age' => $request->input('age'), 'email' => $request->input('email'),
+                'amount' => $request->input('amount'), 'phone' => $request->input('phone'),
+                'other' => $request->input('other')
+            ]
+        );
+
+
     }
 }

@@ -49,12 +49,6 @@
                                     aiachicker@gmail.com
                                 </a>
                             </li>
-                            <li class="e-skype">
-                                <i class="fa fa-skype"></i>
-                                <a href="skype:chittapuu?call">
-                                    chittapuu
-                                </a>
-                            </li>
                             <li class="e-line">
                                 <img src="{{ asset("components/image/line-icon-white.png") }}">
                                 <a href="skype:chittapuu?call">
@@ -247,30 +241,28 @@
                             <h3>ลงทะเบียนรับคำปรึกษา</h3>
 
                             <div class="col-md-6">
-                                <input type="text" class="text" name="username" placeholder="ชื่อ-นามสกุล">
-                                <input type="text" class="text" name="username" placeholder="email">
-                                <input type="text" class="text" name="username" placeholder="เบอร์โทร">
+                                <input type="text" class="text valid-input" name="name" placeholder="ชื่อ-นามสกุล">
+                                <input type="email" class="text valid-input" name="email" placeholder="email">
+                                <input type="number" class="text valid-input" name="phone" placeholder="เบอร์โทร">
 
 
                                 <div class="col-md-6">
-                                    <input type="radio" id="checkbox-1-1" class="custom-checkbox"  name="selector" checked/>
+                                    <input type="radio" id="checkbox-1-1" class="custom-checkbox"  name="sex" value="1" checked/>
                                     <label for="checkbox-1-1">ชาย</label>
                                 </div>
                                 <div class="col-md-6">
-                                    <input type="radio" id="checkbox-1-2" class="custom-checkbox"  name="selector" />
+                                    <input type="radio" id="checkbox-1-2" class="custom-checkbox"  name="sex" value="2" />
                                     <label for="checkbox-1-2">หญิง</label>
                                 </div>
                             </div>
                             <div class="col-md-6">
-                                <input type="text" class="text" name="username" placeholder="อายุ">
-                                <input type="text" class="text" name="username" placeholder="เบี้ยต่อปี">
+                                <input type="text" class="text valid-input" name="age" placeholder="อายุ">
+                                <input type="number" class="text valid-input" name="amount" placeholder="เบี้ยต่อปี" min="1" max="10000000">
 
-
-
-                                <textarea name="message" type="text" class="text" id="input-message" placeholder="ข้อความ"></textarea>
+                                <textarea name="message" type="text" class="text valid-input" id="message" placeholder="ข้อความ"></textarea>
                             </div>
                             <br>
-                            <button class="signin clearfix">
+                            <button class="signin clearfix" id="send">
                                 ส่งข้อความ
                             </button>
                         </form>
@@ -410,6 +402,64 @@
                 $('body').addClass('active');
             }
         });
+
+        $('#send').click(function(e){
+            e.preventDefault();
+
+            var $name = $('input[name=name]').val(),
+                $sex = $('input[name=sex]:checked').val(),
+                $age = $('input[name=age]').val(),
+                $email = $('input[name=email]').val(),
+                $amount = $('input[name=amount]').val(),
+                $phone = $('input[name=phone]').val(),
+                $other = $('textarea[name=message]').val();
+
+//            if(!$name.trim()){
+//                alert('a');
+//            }
+
+            var $is = true;
+
+            $('.valid-input').each(function(){
+                var $this = $(this);
+                if(!$this.val().trim()){
+                    $is = false;
+                    $this.focus();
+
+                    alert('กรุณากรอกข้อมูลให้ครบ!');
+                    return false;
+                }
+            });
+
+            if($is){
+                $.ajax({
+                    url: "{{ URL::to('/api/contact') }}",
+                    dataType: "json",
+                    data: {
+                        name: $name,
+                        sex: $sex,
+                        age: $age,
+                        email: $email,
+                        amount: $amount,
+                        phone: $phone,
+                        other: $other
+                    },
+                    success:function(data) {
+
+                    }
+                });
+
+                alert("ได้รับข้อความของคุณแล้ว รอการติดต่อกลับจากทีมงาน");
+
+                $('.valid-input').each(function(){
+                    var $this = $(this);
+                    $this.val('');
+                });
+            }
+
+        });
+
+
 
 //        $( window ).resize(function() {
 //            $width = $( window ).width();

@@ -116,4 +116,4 @@ Route::get('/20PayLifePackage', function () {
 });
 
 
-Route::resource('/api/contact', 'ContactController');
+Route::resource('/api/contact', 'ContactController@insertContact');
