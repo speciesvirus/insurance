@@ -1,7 +1,7 @@
 
 @extends('layouts.main')
 
-@section('title', 'All In One')
+@section('title', 'AIA Chicker')
 
 @section('facebook-meta')
     <meta property="og:type"          content="website" />
