@@ -7,6 +7,7 @@
     <meta name="keywords" content="AIA,ALL IN ONE,ความรัก,insurance,future,finance">
     <meta name="author" content="aiachicker">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="{{ asset('favicon.ico') }}">
     <title>@yield('title')</title>
 
     <meta property="fb:app_id" content="1724713611112155" />
@@ -106,7 +107,11 @@
             <span class="glyphicon"></span>
         </label>
         <div class="menu">
-            <h2><a href="{{ URL::to('/') }}" class="chicker_logo" title="AIA Chicker">AIA Chicker</a></h2>
+            <h2>
+                <a href="{{ URL::to('/') }}" class="chicker_logo" title="AIA Chicker">
+                    <img src="{{ asset("components/image/chick_logo_red.png") }}">
+                </a>
+            </h2>
             <ul>
                 {{--<li>--}}
                 {{--<div class="profile-insurance">--}}

@@ -17,13 +17,17 @@ a {
 }
 
 
-.chicker_logo{
+.chicker_logo img{
+    max-width: 166px;
     -webkit-transition: all 0.25s ease-in-out;
     transition: all 0.25s ease-in-out;
 }
-.chicker_logo:hover{
-    font-size: 35px;
-    text-decoration: none;
+.chicker_logo img:hover{
+
+    -ms-transform: scale(0.9); /* IE 9 */
+    -webkit-transform: scale(0.9); /* Safari */
+    transform: scale(0.9);
+
 }
 
 .parallax input[type="checkbox"]:checked ~ label span::after {
