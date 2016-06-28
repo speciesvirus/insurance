@@ -116,4 +116,17 @@ Route::get('/20PayLifePackage', function () {
 });
 
 
+
+Route::get('/AnnuitySmart', function () {
+    return view('annuity/AnnuitySmart');
+});
+Route::get('/AnnuityFIX', function () {
+    return view('annuity/AnnuityFIX');
+});
+Route::get('/Annuity60-85', function () {
+    return view('annuity/Annuity60-85');
+});
+
+
+
 Route::resource('/api/contact', 'ContactController@insertContact');

@@ -74,7 +74,7 @@
                                 {{--<a href="#" target="_blank"><i class="fa fa-twitter"></i></a>--}}
 
 
-                                <a href="https://www.facebook.com/AIAChicker-1682336668699126/" target="_blank"><i class="fa fa-facebook"></i> </a>
+                                <a href="https://www.facebook.com/AIAChicker-1682336668699126/" target="_blank" title="Facebook AIA Chicker"><i class="fa fa-facebook"></i> </a>
 
 
                                 {{--<a href="#" target="_blank"><i class="fa fa-linkedin"></i></a>--}}
@@ -106,7 +106,7 @@
             <span class="glyphicon"></span>
         </label>
         <div class="menu">
-            <h2><a href="{{ URL::to('/') }}" class="chicker_logo">AIA Chicker</a></h2>
+            <h2><a href="{{ URL::to('/') }}" class="chicker_logo" title="AIA Chicker">AIA Chicker</a></h2>
             <ul>
                 {{--<li>--}}
                 {{--<div class="profile-insurance">--}}
@@ -114,58 +114,66 @@
                 {{--</div>--}}
                 {{--</li>--}}
                 {{--<li><a href="javascript:void(0)" class="active">คุ้มครองตลอดชีพ</a></li>--}}
-                <li><a href="{{ URL::to('/ecir') }}">คุ้มครองโรคร้ายแรง</a></li>
+                <li><a href="{{ URL::to('/ecir') }}" title="คุ้มครองโรคร้ายแรง">คุ้มครองโรคร้ายแรง</a></li>
                 {{--<li><a href="javascript:void(0)">ประกันสุขภาพรายปี AIA Health Guard</a></li>--}}
-                <li><a href="{{ URL::to('/hb') }}">ค่าชดเชยรายวัน</a></li>
-                <li><a href="{{ URL::to('/pa') }}">ประกันอุบัติเหตุ</a></li>
+                <li><a href="{{ URL::to('/hb') }}" title="ค่าชดเชยรายวัน">ค่าชดเชยรายวัน</a></li>
+                <li><a href="{{ URL::to('/pa') }}" title="ประกันอุบัติเหตุ">ประกันอุบัติเหตุ</a></li>
 
-                <li><a href="javascript:void(0)" class="active">สะสมทรัพย์</a>
+                <li><a href="javascript:void(0)" class="active" title="สะสมทรัพย์">สะสมทรัพย์</a>
                     <ul>
                         {{--<li><a href="{{ URL::to('/pa') }}">ชำระเบี้ย 7 ปี คุ้มครอง 15 ปี (มีเงินปันผล)</a></li>--}}
-                        <li><a href="{{ URL::to('/5Pay10') }}">ชำระเบี้ย 5 ปี คุ้มครอง 10 ปี (ไม่มีเงินปันผล)</a></li>
-                        <li><a href="{{ URL::to('/8Pay20') }}">ชำระเบี้ย 8 ปี คุ้มครอง 20 ปี (มีเงินปันผล)</a></li>
-                        <li><a href="{{ URL::to('/15Pay25') }}">ชำระเบี้ย 15 ปี คุ้มครอง 25 ปี (มีเงินปันผล)</a></li>
-                        <li><a href="{{ URL::to('/15Pay30') }}">ชำระเบี้ย 15 ปี คุ้มครอง 30 ปี (มีเงินปันผล)</a></li>
-                        <li><a href="{{ URL::to('/excellent') }}">ชำระเบี้ย 20 ปี คุ้มครอง 20 ปี (มีเงินปันผล)</a></li>
-                        <li><a href="{{ URL::to('/10For80') }}">ชำระเบี้ย 10 ปี คุ้มครองถึงอายุ 80 ปี (มีเงินปันผล)</a></li>
+                        <li><a href="{{ URL::to('/5Pay10') }}" title="ชำระเบี้ย 5 ปี คุ้มครอง 10 ปี">ชำระเบี้ย 5 ปี คุ้มครอง 10 ปี (ไม่มีเงินปันผล)</a></li>
+                        <li><a href="{{ URL::to('/8Pay20') }}" title="ชำระเบี้ย 8 ปี คุ้มครอง 20 ปี">ชำระเบี้ย 8 ปี คุ้มครอง 20 ปี (มีเงินปันผล)</a></li>
+                        <li><a href="{{ URL::to('/15Pay25') }}" title="ชำระเบี้ย 15 ปี คุ้มครอง 25 ปี">ชำระเบี้ย 15 ปี คุ้มครอง 25 ปี (มีเงินปันผล)</a></li>
+                        <li><a href="{{ URL::to('/15Pay30') }}" title="ชำระเบี้ย 15 ปี คุ้มครอง 30 ปี">ชำระเบี้ย 15 ปี คุ้มครอง 30 ปี (มีเงินปันผล)</a></li>
+                        <li><a href="{{ URL::to('/excellent') }}" title="ชำระเบี้ย 20 ปี คุ้มครอง 20 ปี">ชำระเบี้ย 20 ปี คุ้มครอง 20 ปี (มีเงินปันผล)</a></li>
+                        <li><a href="{{ URL::to('/10For80') }}" title="ชำระเบี้ย 10 ปี คุ้มครองถึงอายุ 80 ปี">ชำระเบี้ย 10 ปี คุ้มครองถึงอายุ 80 ปี (มีเงินปันผล)</a></li>
                         {{--<li><a href="{{ URL::to('/pa') }}">ชำระเบี้ย 15 ปี คุ้มครองถึงอายุ 80 ปี (มีเงินปันผล)</a></li>--}}
                     </ul>
                 </li>
 
-                <li><a href="javascript:void(0)" class="active">คุ้มครองตลอดชีพ</a>
+                <li><a href="javascript:void(0)" class="active" title="คุ้มครองตลอดชีพ">คุ้มครองตลอดชีพ</a>
                     <ul>
-                        <li><a href="{{ URL::to('/15PayLife') }}">ชำระเบี้ย 15 ปี คุ้มครองถึงอายุ 99 ปี (มีเงินปันผล)</a></li>
-                        <li><a href="{{ URL::to('/20PayLife') }}">ชำระเบี้ย 20 ปี คุ้มครองถึงอายุ 99 ปี (ไม่มีเงินปันผล)</a></li>
-                        <li><a href="{{ URL::to('/LifeGift') }}">ชำระเบี้ย 5 ปี คุ้มครองถึง 99 ปี (มีเงินปันผล)</a></li>
+                        <li><a href="{{ URL::to('/15PayLife') }}" title="ชำระเบี้ย 15 ปี คุ้มครองถึงอายุ 99 ปี">ชำระเบี้ย 15 ปี คุ้มครองถึงอายุ 99 ปี (มีเงินปันผล)</a></li>
+                        <li><a href="{{ URL::to('/20PayLife') }}" title="ชำระเบี้ย 20 ปี คุ้มครองถึงอายุ 99 ปี">ชำระเบี้ย 20 ปี คุ้มครองถึงอายุ 99 ปี (ไม่มีเงินปันผล)</a></li>
+                        <li><a href="{{ URL::to('/LifeGift') }}" title="ชำระเบี้ย 5 ปี คุ้มครองถึง 99 ปี">ชำระเบี้ย 5 ปี คุ้มครองถึง 99 ปี (มีเงินปันผล)</a></li>
                     </ul>
                 </li>
-                <li><a href="javascript:void(0)" class="active">ค่ารักษาโรงพยาบาลและศัลยกรรม</a>
+                <li><a href="javascript:void(0)" class="active" title="ประกันชีวิตแบบบำนาญ">ประกันชีวิตแบบบำนาญ</a>
                     <ul>
-                        <li><a href="{{ URL::to('/H&S') }}">ประกันสุขภาพแบบแยกค่าใช้จ่าย H&S</a></li>
-                        <li><a href="{{ URL::to('/H&S_PlusGold') }}">ประกันสุขภาพเหมาจ่าย AIA H&S Plus Gold</a></li>
-                        <li><a href="{{ URL::to('/H&S_Junior') }}">ประกันสุขภาพเด็ก H&S Junior</a></li>
+                        <li><a href="{{ URL::to('/AnnuitySmart') }}" title="AIA Annuity Smart">บำนาญ สมาร์ท</a></li>
+                        <li><a href="{{ URL::to('/AnnuityFIX') }}" title="AIA Annuity FIX">บำนาญ มั่นคง </a></li>
+                        <li><a href="{{ URL::to('/Annuity60-85') }}" title="AIA Annuity 60/85">บำนาญ 60/85</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="javascript:void(0)" class="active" title="ค่ารักษาโรงพยาบาลและศัลยกรรม">ค่ารักษาโรงพยาบาลและศัลยกรรม</a>
+                    <ul>
+                        <li><a href="{{ URL::to('/H&S') }}" title="ประกันสุขภาพแบบแยกค่าใช้จ่าย H&S">ประกันสุขภาพแบบแยกค่าใช้จ่าย H&S</a></li>
+                        <li><a href="{{ URL::to('/H&S_PlusGold') }}" title="ประกันสุขภาพเหมาจ่าย AIA H&S Plus Gold">ประกันสุขภาพเหมาจ่าย AIA H&S Plus Gold</a></li>
+                        <li><a href="{{ URL::to('/H&S_Junior') }}" title="ประกันสุขภาพเด็ก H&S Junior">ประกันสุขภาพเด็ก H&S Junior</a></li>
                     </ul>
                 </li>
 
 
-                <li><a href="javascript:void(0)" class="active">ประกันกลุ่ม</a>
+                <li><a href="javascript:void(0)" class="active" title="ประกันกลุ่ม">ประกันกลุ่ม</a>
                     <ul>
-                        <li><a href="{{ URL::to('/GPA-Continental') }}">ประกันอุบัติเหตุกลุ่มพนักงาน GPA Continental</a></li>
-                        <li><a href="{{ URL::to('/5up') }}">ประกันสุขภาพกลุ่มพนักงาน 5 UP</a></li>
-                        <li><a href="{{ URL::to('/20up') }}">ประกันสุขภาพกลุ่มพนักงาน 20 UP</a></li>
-                        <li><a href="{{ URL::to('/50up') }}">ประกันสุขภาพกลุ่มพนักงาน 50 UP</a></li>
+                        <li><a href="{{ URL::to('/GPA-Continental') }}" title="ประกันอุบัติเหตุกลุ่มพนักงาน GPA Continental">ประกันอุบัติเหตุกลุ่มพนักงาน GPA Continental</a></li>
+                        <li><a href="{{ URL::to('/5up') }}" title="ประกันสุขภาพกลุ่มพนักงาน 5 UP">ประกันสุขภาพกลุ่มพนักงาน 5 UP</a></li>
+                        <li><a href="{{ URL::to('/20up') }}" title="ประกันสุขภาพกลุ่มพนักงาน 20 UP">ประกันสุขภาพกลุ่มพนักงาน 20 UP</a></li>
+                        <li><a href="{{ URL::to('/50up') }}" title="ประกันสุขภาพกลุ่มพนักงาน 50 UP">ประกันสุขภาพกลุ่มพนักงาน 50 UP</a></li>
                     </ul>
                 </li>
 
                 <li><a href="javascript:void(0)" class="active">สำเร็จรูป</a>
                     <ul>
-                        <li><a href="{{ URL::to('/Family') }}">Family Shield</a></li>
-                        <li><a href="{{ URL::to('/Lady') }}">Lady Shield</a></li>
-                        <li><a href="{{ URL::to('/HealthLifetimeJunior') }}">Health Lifetime Junior</a></li>
-                        <li><a href="{{ URL::to('/HealthLifetimeAdult') }}">Health Lifetime Adult</a></li>
-                        <li><a href="{{ URL::to('/HealthGuard') }}">Health Guard</a></li>
-                        <li><a href="{{ URL::to('/HealthyLiving') }}"> Healthy Living</a></li>
-                        <li><a href="{{ URL::to('/20PayLifePackage') }}">20 Pay Life (Par)</a></li>
+                        <li><a href="{{ URL::to('/Family') }}" title="Family Shield">Family Shield</a></li>
+                        <li><a href="{{ URL::to('/Lady') }}" title="Lady Shield">Lady Shield</a></li>
+                        <li><a href="{{ URL::to('/HealthLifetimeJunior') }}" title="Health Lifetime Junior">Health Lifetime Junior</a></li>
+                        <li><a href="{{ URL::to('/HealthLifetimeAdult') }}" title="Health Lifetime Adult">Health Lifetime Adult</a></li>
+                        <li><a href="{{ URL::to('/HealthGuard') }}" title="Health Guard">Health Guard</a></li>
+                        <li><a href="{{ URL::to('/HealthyLiving') }}" title="Healthy Living">Healthy Living</a></li>
+                        <li><a href="{{ URL::to('/20PayLifePackage') }}" title="20 Pay Life">20 Pay Life (Par)</a></li>
                     </ul>
                 </li>
 
@@ -195,7 +203,7 @@
                     <div id="breadcrumb" class="breadcrumb-category">
                         <div itemtype="http://data-vocabulary.org/Breadcrumb" itemscope="" class="breadcrumb-home">
 
-                            <a href="{{ URL::to('/') }}" itemprop="url">
+                            <a href="{{ URL::to('/') }}" itemprop="url" title="AIA Chicker">
                                 <span class="fa fa-home fa-fw"></span>
                                 <span itemprop="title">AIA Chicker</span>
                             </a>
@@ -212,7 +220,7 @@
 
                             <div itemtype="http://data-vocabulary.org/Breadcrumb" itemscope="">
                                 {{--<span class="fa fa-folder fa-fw"></span>--}}
-                                <a href="{{ URL::to('/').'/'.Request::segment($i) }}" itemprop="url">
+                                <a href="{{ URL::to('/').'/'.Request::segment($i) }}" itemprop="url" title="{{ Request::segment($i) }}">
                                     <span itemprop="title">{{ Request::segment($i) }}</span>
                                 </a>
                             </div>
@@ -259,7 +267,7 @@
                                 <input type="text" class="text valid-input" name="age" placeholder="อายุ">
                                 <input type="number" class="text valid-input" name="amount" placeholder="เบี้ยต่อปี" min="1" max="10000000">
 
-                                <textarea name="message" type="text" class="text valid-input" id="message" placeholder="ข้อความ"></textarea>
+                                <textarea name="message" class="text valid-input" id="message" placeholder="ข้อความ"></textarea>
                             </div>
                             <br>
                             <button class="signin clearfix" id="send">
@@ -295,16 +303,16 @@
                 <h3>ประกันชีวิต</h3>
 
 
-                <a href="{{ URL::to('/15PayLife') }}">5 Pay Lift</a>
-                <a href="{{ URL::to('/20PayLife') }}">15 Pay Lift</a>
-                <a href="{{ URL::to('/LifeGift') }}">20 Pay Lift</a>
+                <a href="{{ URL::to('/15PayLife') }}" title="15PayLife">5 Pay Lift</a>
+                <a href="{{ URL::to('/20PayLife') }}" title="20PayLife">15 Pay Lift</a>
+                <a href="{{ URL::to('/LifeGift') }}" title="LifeGift">20 Pay Lift</a>
 
-                <a href="{{ URL::to('/5Pay10') }}">5 Pay 10</a>
-                <a href="{{ URL::to('/8Pay20') }}">8 PaY 20</a>
-                <a href="{{ URL::to('/15Pay25') }}">15 Pay 25</a>
-                <a href="{{ URL::to('/15Pay30') }}">15 Pay 30</a>
-                <a href="{{ URL::to('/20Pay20') }}">AIA Excellent</a>
-                <a href="{{ URL::to('/10for80') }}">10 For 80</a>
+                <a href="{{ URL::to('/5Pay10') }}" title="5Pay10">5 Pay 10</a>
+                <a href="{{ URL::to('/8Pay20') }}" title="8Pay20">8 PaY 20</a>
+                <a href="{{ URL::to('/15Pay25') }}" title="15Pay25">15 Pay 25</a>
+                <a href="{{ URL::to('/15Pay30') }}" title="15Pay30">15 Pay 30</a>
+                <a href="{{ URL::to('/20Pay20') }}" title="20Pay20">AIA Excellent</a>
+                <a href="{{ URL::to('/10for80') }}" title="10for80">10 For 80</a>
 
 
             </div>
@@ -312,18 +320,18 @@
 
             <div class="footer-group">
                 <h3>ค่ารักษาพยาบาล</h3>
-                <a href="{{ URL::to('/H&S') }}">H&S</a>
-                <a href="{{ URL::to('/H&S_PlusGold') }}">H&S Plus Gold</a>
-                <a href="{{ URL::to('/H&S_Junior') }}">H&S Junior</a>
+                <a href="{{ URL::to('/H&S') }}" title="H&S">H&S</a>
+                <a href="{{ URL::to('/H&S_PlusGold') }}" title="H&S PlusGold">H&S Plus Gold</a>
+                <a href="{{ URL::to('/H&S_Junior') }}" title="H&S Junior">H&S Junior</a>
             </div>
 
 
 
             <div class="footer-group">
                 <h3>เพิ่มเติม</h3>
-                <a href="{{ URL::to('/ecir') }}">คุ้มครองโรคร้ายแรง</a>
-                <a href="{{ URL::to('/hb') }}">ค่าชดเชยรายวัน</a>
-                <a href="{{ URL::to('/pa') }}">ประกันอุบัติเหตุ</a>
+                <a href="{{ URL::to('/ecir') }}" title="ecir">คุ้มครองโรคร้ายแรง</a>
+                <a href="{{ URL::to('/hb') }}" title="hb">ค่าชดเชยรายวัน</a>
+                <a href="{{ URL::to('/pa') }}" title="pa">ประกันอุบัติเหตุ</a>
             </div>
 
             <div class="clearfix"></div>
