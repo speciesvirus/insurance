@@ -12,6 +12,10 @@
 
 @section('content')
 
+    <div class="title-container">
+        <h3 class="topic">AIA ALL IN ONE</h3>
+        <p>แผนประกันที่ให้ความคุ้มครองครบถ้วนในแผนเดียว ทั้งประกันชีวิต ประกันสุขภาพ ประกันอุบัติเหตุ และประกันโรคร้ายแรง ให้คุณพร้อมรับกับทุกสถานการณ์ที่พลิกผัน เพื่อความอุ่นใจในอนาคตของคุณและครอบครัว</p>
+    </div>
 
     <div class="aio-con clearfix">
         <div class="aio-bg">
@@ -28,6 +32,8 @@
             <h3 class="text-white">พร้อม <span class="text-red">ครบ</span> ในแผนประกันเดียว</h3>
         </div>
     </div>
+
+
 
     <div>
         <img src="{{ asset("components/image/20_Pay_Life_Package/newProd20PLPackage-5.png") }}" >
