@@ -14,6 +14,8 @@
     <meta property="og:url"    content="<?php echo "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]"; ?>" />
 @yield('facebook-meta')
 
+    <link href="https://fonts.googleapis.com/css?family=Kanit:400&subset=thai" rel="stylesheet">
+
     <link rel="stylesheet" type="text/css" href="{{ asset("components/css/reset.css") }}">
     <link rel="stylesheet" type="text/css" href="{{ asset("components/font-awesome/css/font-awesome.min.css") }}">
     <link rel="stylesheet" type="text/css" href="{{ asset("components/bootstrap/dist/css/bootstrap.min.css") }}">
@@ -106,6 +108,9 @@
         <label for="menu-toggle">
             <span class="glyphicon"></span>
         </label>
+
+
+
         <div class="menu">
             <h2>
                 <a href="{{ URL::to('/') }}" class="chicker_logo" title="AIA Chicker">

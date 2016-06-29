@@ -15,10 +15,10 @@
 
     <div class="aio-con clearfix">
         <div class="aio-bg">
-            <img src="{{ asset("components/image/banner-all-in-one.jpg") }}">
+            <img src="{{ asset("components/image/banner-all-in-one.jpg") }}" alt="AIA Chicker">
         </div>
         <div class="aio-banner">
-            <img src="{{ asset("components/image/clover.png") }}" >
+            <img src="{{ asset("components/image/clover.png") }}" alt="AIA" >
 
         </div>
         <div class="aio-title">
