@@ -7,7 +7,7 @@
     <meta property="og:type"          content="website" />
     <meta property="og:title"         content="AIA ALL IN ONE" />
     <meta property="og:description"   content="แผนประกันที่ให้ความคุ้มครองครบถ้วนในแผนเดียว ทั้งประกันชีวิต ประกันสุขภาพ ประกันอุบัติเหตุ และประกันโรคร้ายแรง ให้คุณพร้อมรับกับทุกสถานการณ์ที่พลิกผัน เพื่อความอุ่นใจในอนาคตของคุณและครอบครัว" />
-    <meta property="og:image"         content="{{ asset("components/image/ECIR/ecir_logo.jpg") }}" />
+    <meta property="og:image"         content="{{ asset("components/image/chicker-all-in-one.jpg") }}" />
 @stop
 
 @section('content')

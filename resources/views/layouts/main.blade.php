@@ -105,18 +105,27 @@
 
 
         <input type="checkbox" id="menu-toggle" class="hidden">
-        <label for="menu-toggle">
-            <span class="glyphicon"></span>
+        <label for="menu-toggle" class="menu-icon">
+            <span></span>
+            <p>menu</p>
+            {{--<span class="glyphicon"></span>--}}
         </label>
 
 
 
+
         <div class="menu">
-            <h2>
+
+            <div class="hr animated fadeIn">
                 <a href="{{ URL::to('/') }}" class="chicker_logo" title="AIA Chicker">
-                    <img src="{{ asset("components/image/chick_logo_red.png") }}">
+                    <img src="{{ asset("components/image/chick_logo_red.jpg") }}" alt="AIA Chicker logo">
                 </a>
-            </h2>
+                <hr>
+            </div>
+
+
+
+
             <ul>
                 {{--<li>--}}
                 {{--<div class="profile-insurance">--}}
