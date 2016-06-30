@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
  use Illuminate\Http\Request;
  use DB;
-
+ use Mail;
 use App\Http\Requests;
 
 class ContactController extends Controller
@@ -95,15 +95,87 @@ class ContactController extends Controller
      */
     public  function insertContact(Request $request){
 
-        DB::table('contact')->insert(
-            [
-                'name' => $request->input('name'), 'sex' => $request->input('sex'),
-                'age' => $request->input('age'), 'email' => $request->input('email'),
-                'amount' => $request->input('amount'), 'phone' => $request->input('phone'),
-                'other' => $request->input('other')
-            ]
-        );
+
+        $dt = new \DateTime();
+
+        $data = [
+            'name' => $request->input('name'), 'sex' => $request->input('sex'),
+            'age' => $request->input('age'), 'email' => $request->input('email'),
+            'amount' => $request->input('amount'), 'phone' => $request->input('phone'),
+            'other' => $request->input('other')
+        ];
+
+        DB::table('contact')->insert($data);
+        $emails = ['chittapuu@gmail.com'];
+
+        $data = [
+            'name' => $request->input('name'), 'sex' => $request->input('sex'),
+            'age' => $request->input('age'), 'email' => $request->input('email'),
+            'amount' => $request->input('amount'), 'phone' => $request->input('phone'),
+            'other' => $request->input('other'), 'time' => $dt->format('Y-m-d H:i:s')
+        ];
+
+        Mail::send('emails.customerRequest', $data, function($message) use ($emails, $request)
+        {
+            $sender = 'info@chicker.com';
+            $subject = 'AIA Chicker K.'.$request->input('name').' amount : '.$request->input('amount');
+
+            $message->from ($sender, 'chicker' );
+            $message->returnPath($sender);
+            $message->to($emails)->subject($subject);
+        });
+
+
+
+//        $data = [
+//            'name' => $request->input('name'), 'sex' => $request->input('sex'),
+//            'age' => $request->input('age'), 'email' => $request->input('email'),
+//            'amount' => $request->input('amount'), 'phone' => $request->input('phone'),
+//            'other' => $request->input('other')
+//        ];
+//
+//        DB::table('contact')->insert($data);
+//
+//
+//        $title = 'This is test e-mail';
+//        $content = 'chittapuu@gmail.com';
+//
+//        $dt = new DateTime();
+//        $dt->format('Y-m-d H:i:s');
+//        $data = [
+//            'name' => $request->input('name'), 'sex' => $request->input('sex'),
+//            'age' => $request->input('age'), 'email' => $request->input('email'),
+//            'amount' => $request->input('amount'), 'phone' => $request->input('phone'),
+//            'other' => $request->input('other'), 'time' => $dt
+//        ];
+//
+//        $emails = ['chittapuu@gmail.com'];
+//        Mail::send('emails.customerRequest', $data, function($message) use ($emails)
+//        {
+//            $sender = 'info@chicker.com';
+//            $message->from ($sender, 'chicker' );
+//            $message->returnPath($sender);
+//            $message->replyTo($sender);
+//            $message->to($emails)->subject('This is test e-mail');
+//        });
+
 
 
     }
+
+
+
+    /**
+     * Insert contact.
+     *
+     * @param  Request  $request
+     * @return \Illuminate\Http\Response
+     */
+
+    public  function customerToContactMail(Request $request){
+
+
+
+    }
+
 }

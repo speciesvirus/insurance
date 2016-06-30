@@ -129,4 +129,9 @@ Route::get('/Annuity60-85', function () {
 
 
 
+
+
 Route::resource('/api/contact', 'ContactController@insertContact');
+
+
+Route::post('/send', 'EmailController@send');
