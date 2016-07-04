@@ -1,7 +1,7 @@
 
 @extends('layouts.main')
 
-@section('title', 'สัญญาเพิ่มเติมกลุ่มโรคร้ายแรง')
+@section('title', 'ECIR | สัญญาเพิ่มเติมกลุ่มโรคร้ายแรง')
 
 @section('facebook-meta')
     <meta property="og:type"          content="website" />
@@ -11,6 +11,12 @@
 @stop
 
 @section('content')
+
+    <div class="title-container">
+        <h3 class="topic">ECIR</h3>
+        <h5>สัญญาเพิ่มเติมกลุ่มโรคร้ายแรง</h5>
+        <p>เมื่อตรวจพบว่าเป็นโรคร้ายแรงเป็นครั้งแรกในขณะที่ยังมีชีวิตอยู่ การได้รับชดเชยเงินก้อนจะช่วยในการวางแผนการรักษาได้เป็นอย่างมาก อย่าปล่อยให้โรคร้ายแรงทำร้ายคนทั้งบ้าน ให้เอไอเอ เป็นผู้ดูแลคุณและคนที่คุณรัก</p>
+    </div>
 
     <div>
         <img src="{{ asset("components/image/ECIR/Manual_Rider-15.png") }}" >

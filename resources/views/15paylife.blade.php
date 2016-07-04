@@ -7,11 +7,19 @@
     <meta property="og:type"          content="website" />
     <meta property="og:title"         content="เอไอเอ ตลอดชีพ ชำระเบี้ยประกันภัย 15 ปี ­(มีเงินปันผล)" />
     <meta property="og:description"   content="สร้างหลักประกันที่มั่นคงให้กับคนที่คุณรักเพื่อช่วยบรรเทาความเดือดร้อนหากเกิดเหตุการณ์ไม่คาดฝัน เป็นการแสดงความรับผิดชอบ ความรัก ความห่วงใยที่คุณเต็มใจมอบให้กับครอบครัวและคนที่คุณรักได้เป็นอย่างดี" />
-    <meta property="og:image"         content="{{ asset("components/image/ECIR/ecir_logo.jpg") }}" />
+    <meta property="og:image"         content="{{ asset("components/image/15PayLife/pay_life_logo.jpg") }}" />
 @stop
 
 
 @section('content')
+
+    <div class="title-container">
+        <h3 class="topic">AIA 15 PAY LIFE</h3>
+        <h5>ประกันชีวิตเพื่อความคุ้มครอง</h5>
+        <p>สร้างหลักประกันที่มั่นคงให้กับคนที่คุณรักเพื่อช่วยบรรเทาความเดือดร้อนหากเกิดเหตุการณ์
+            ไม่คาดฝัน เป็นการแสดงความรับผิดชอบ ความรัก ความห่วงใยที่คุณเต็มใจมอบให้กับครอบครัวและคนที่คุณรักได้เป็นอย่างดี
+        </p>
+    </div>
 
     <div>
         <img src="{{ asset("components/image/15PayLife/AIA15PayLifebrochure-3.png") }}" >
