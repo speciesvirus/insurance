@@ -53,7 +53,6 @@
                                 </a>
                             </li>
                             <li class="e-line">
-                                <img src="{{ asset("components/image/line-icon-white.png") }}">
                                 <a href="skype:chittapuu?call">
                                     @aiachicker
                                 </a>

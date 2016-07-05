@@ -300,8 +300,25 @@ a {
 img{
     max-width: 100%;
 }
-.e-line > img{
-    max-width: 17px;
+
+.e-line {
+    position: relative;
+    margin-left: 20px;
+}
+.e-line:after {
+    position: absolute;
+    top: 0;
+    left: -22px;
+    content: " ";
+    background: url(../image/line-icon-white.png);
+    background-size: 100% 100%;
+    width: 16px;
+    height: 16px;
+    margin: 2px;
+    /* float: left; */
+
+
+
 }
 
 

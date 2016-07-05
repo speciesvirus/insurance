@@ -7,7 +7,10 @@
     <meta property="og:type"          content="website" />
     <meta property="og:title"         content="ตลอดชีพ ชำระเบี้ยประกันภัย 20 ปี (มีเงินปันผล)" />
     <meta property="og:description"   content="เอไอเอ ตลอดชีพ ชำระเบี้ยประกันภัย 20 ปี (มีเงินปันผล) เป็นแบบประกันที่สอดคล้องกับความต้องการที่แท้จริงของครอบครัว และเป็นส่วนสำคัญในการสร้างความอุ่นใจให้ครอบครัวได้" />
-    <meta property="og:image"         content="{{ asset("components/image/20Paylife/pay_life_logo.jpg") }}" />
+    <meta property="og:image"         content="{{ asset("components/image/20Paylife/pay_life_logo_470.jpg") }}" />
+    <meta property="og:image:width" content="470" />
+    <meta property="og:image:height" content="246" />
+
 @stop
 
 @section('content')
